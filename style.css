@@ -1,26 +1,9 @@
+/* Agrégalo a tu style.css */
 .placa-img {
-    width: 1200px !important; /* FIJO: Para que las coordenadas coincidan siempre */
+    width: 1200px !important; /* NO CAMBIES ESTE NÚMERO */
     height: auto;
     display: block;
-    margin: 30px auto;
-    border: 2px solid #555;
-}
-
-#info-box {
-    position: fixed; /* Fijo para que no se mueva al hacer scroll */
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 900px;
-    padding: 20px;
-    background: #111;
-    color: #00ffcc;
-    border: 3px solid #00ffcc;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    z-index: 10000;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    margin: 0 auto;
+    /* Esto ayuda a que el mapa no se mueva */
+    max-width: none !important; 
 }
