@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const display = document.getElementById('info-box');
-    const todasLasAreas = document.querySelectorAll('area');
+    const areas = document.querySelectorAll('area');
 
-    todasLasAreas.forEach(zona => {
-        // Al entrar el mouse en un área
+    areas.forEach(zona => {
+        zona.style.cursor = "pointer"; // Indica visualmente que hay información
+
         zona.addEventListener('mouseenter', function() {
-            const texto = this.getAttribute('data-info');
-            display.innerText = texto;
-            display.style.color = "#00ffcc";
+            display.textContent = this.getAttribute('data-info');
+            display.style.borderColor = "#00ffcc";
         });
 
-        // Al salir el mouse del área
         zona.addEventListener('mouseleave', () => {
-            display.innerText = "Pasa el ratón sobre un componente para conocer su función";
-            display.style.color = "#fff";
+            display.textContent = "Pasa el ratón sobre un componente para conocer su función";
+            display.style.borderColor = "#444";
         });
     });
 });
