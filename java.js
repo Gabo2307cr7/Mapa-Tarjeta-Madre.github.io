@@ -1,17 +1,20 @@
-// Seleccionamos todas las áreas de los mapas y el cuadro de información
-const areas = document.querySelectorAll('area');
-const infoBox = document.getElementById('info-box');
+document.addEventListener("DOMContentLoaded", () => {
+    const infoBox = document.getElementById('info-box');
+    const todasLasAreas = document.querySelectorAll('area');
 
-areas.forEach(area => {
-    // Cuando el mouse entra al componente
-    area.addEventListener('mouseenter', (e) => {
-        const info = e.target.getAttribute('data-info');
-        infoBox.textContent = info;
-        infoBox.classList.remove('hidden');
-    });
+    todasLasAreas.forEach(area => {
+        area.addEventListener('mouseenter', function() {
+            const texto = this.getAttribute('data-info');
+            if (infoBox) {
+                infoBox.innerText = texto;
+                infoBox.style.display = "block"; // Asegura que se vea
+            }
+        });
 
-    // Cuando el mouse sale del componente
-    area.addEventListener('mouseleave', () => {
-        infoBox.classList.add('hidden');
+        area.addEventListener('mouseleave', function() {
+            if (infoBox) {
+                infoBox.innerText = "Pasa el mouse sobre un componente para conocer su función";
+            }
+        });
     });
 });
