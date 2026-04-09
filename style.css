@@ -1,45 +1,30 @@
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 20px;
-} 
-
-.container { max-width: 900px; margin: 0 auto; }
-
-.image-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 40px;
-    background: #000;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-/* IMPORTANTE: Ancho fijo de 800px para que las coordenadas coincidan */
 .placa-img {
-    width: 800px !important;
+    width: 1200px !important; /* Nuevo tamaño grande para mayor precisión */
     height: auto;
     display: block;
-    border: 1px solid #333;
+    margin: 20px auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1300px; /* Contenedor más ancho para las imágenes */
+    margin: 0 auto;
 }
 
 #info-box {
-    position: sticky;
-    bottom: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    background: #1e1e1e;
+    position: fixed; /* Ahora es fijo para que siempre sea visible al hacer scroll */
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    padding: 25px;
+    background: rgba(30, 30, 30, 0.95);
     color: #00ffcc;
-    border: 2px solid #444;
-    border-left: 10px solid #00ffcc;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    z-index: 1000;
+    border: 2px solid #00ffcc;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    z-index: 9999;
 }
