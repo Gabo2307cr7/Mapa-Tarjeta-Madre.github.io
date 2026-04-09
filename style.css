@@ -57,12 +57,9 @@ img {
     transform: translateX(-50%) translateY(20px) !important;
 }
 /* En tu archivo style.css */
-.image-wrapper img {
-    width: 880px !important; /* Fuerza el ancho para que coincida con las coordenadas */
-    height: auto; /* Mantiene la proporción */
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #333; /* Opcional, solo para ver los bordes */
+img[usemap="#map-msi"] {
+    width: 800px !important;
+    height: auto;
 }
 /* Efecto visual al pasar por el área (opcional) */
 area {
