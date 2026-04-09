@@ -1,67 +1,45 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: sans-serif;
     text-align: center;
-    margin: 0;
     padding: 20px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.card-section {
-    background: #2d2d2d;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-}
+.container { max-width: 900px; margin: 0 auto; }
 
 .image-wrapper {
     position: relative;
     display: inline-block;
+    margin-bottom: 40px;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-img {
-    max-width: 450px;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-}
-
-/* Estilo del cuadro de información */
-#info-box {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #0078d4;
-    color: white;
-    padding: 20px 30px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-    z-index: 100;
-}
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50%) translateY(20px) !important;
-}
-/* En tu archivo style.css */
-img[usemap="#map-msi"] {
+/* IMPORTANTE: Ancho fijo de 800px para que las coordenadas coincidan */
+.placa-img {
     width: 800px !important;
     height: auto;
+    display: block;
+    border: 1px solid #333;
 }
-/* Efecto visual al pasar por el área (opcional) */
-area {
-    cursor: help;
+
+#info-box {
+    position: sticky;
+    bottom: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #00ffcc;
+    border: 2px solid #444;
+    border-left: 10px solid #00ffcc;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1000;
 }
