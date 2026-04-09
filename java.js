@@ -1,18 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const display = document.getElementById('info-box');
-    const areas = document.querySelectorAll('area');
-
-    areas.forEach(zona => {
-        zona.style.cursor = "pointer"; // Indica visualmente que hay información
-
-        zona.addEventListener('mouseenter', function() {
-            display.textContent = this.getAttribute('data-info');
-            display.style.borderColor = "#00ffcc";
-        });
-
-        zona.addEventListener('mouseleave', () => {
-            display.textContent = "Pasa el ratón sobre un componente para conocer su función";
-            display.style.borderColor = "#444";
-        });
+// Asegúrate de que tu java.js tenga esta lógica
+document.querySelectorAll('area').forEach(zona => {
+    zona.addEventListener('mouseenter', function() {
+        const info = this.getAttribute('data-info');
+        document.getElementById('info-box').textContent = info;
     });
 });
