@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const infoBox = document.getElementById('info-box');
+    const display = document.getElementById('info-box');
     const todasLasAreas = document.querySelectorAll('area');
 
-    todasLasAreas.forEach(area => {
-        area.addEventListener('mouseenter', function() {
+    todasLasAreas.forEach(zona => {
+        // Al entrar el mouse en un área
+        zona.addEventListener('mouseenter', function() {
             const texto = this.getAttribute('data-info');
-            if (infoBox) {
-                infoBox.innerText = texto;
-                infoBox.style.display = "block"; // Asegura que se vea
-            }
+            display.innerText = texto;
+            display.style.color = "#00ffcc";
         });
 
-        area.addEventListener('mouseleave', function() {
-            if (infoBox) {
-                infoBox.innerText = "Pasa el mouse sobre un componente para conocer su función";
-            }
+        // Al salir el mouse del área
+        zona.addEventListener('mouseleave', () => {
+            display.innerText = "Pasa el ratón sobre un componente para conocer su función";
+            display.style.color = "#fff";
         });
     });
 });
