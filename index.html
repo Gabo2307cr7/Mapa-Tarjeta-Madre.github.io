@@ -2,65 +2,54 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Análisis Exhaustivo de Hardware</title>
+    <title>Evolución de Placas Base - Tamaño Expandido</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Catálogo Maestro de Componentes de Hardware</h1>
+        <h1>Disección Completa de Hardware</h1>
 
         <section>
-            <h2>1. Arquitectura Clásica (Socket 7 / VIA)</h2>
+            <h2>1. Arquitectura de los 90 (Socket 7 / VIA)</h2>
             <div class="image-wrapper">
-                <img src="x2togwe5cc831.jpg" usemap="#mapa-vieja" class="placa-img">
+                <img src="image_71f35c.jpg" usemap="#mapa-vieja" class="placa-img">
                 <map name="mapa-vieja">
-                    <area shape="rect" coords="585,488,720,740" alt="Socket 7" data-info="SOCKET 7: Zócalo de inserción para procesadores Pentium. Soporta buses de 66 MHz y voltajes variables mediante puentes (jumpers).">
-                    <area shape="rect" coords="463,248,550,388" alt="Northbridge" data-info="NORTHBRIDGE VIA: El controlador 'norte' que gestiona la memoria RAM y el bus AGP, siendo vital para el rendimiento del sistema.">
-                    <area shape="rect" coords="480,557,566,698" alt="Southbridge" data-info="SOUTHBRIDGE VIA: Gestiona los buses PCI, ISA y controladores IDE de discos duros.">
-                    
-                    <area shape="rect" coords="230,17,615,100" alt="SIMM" data-info="SLOTS SIMM: Ranuras para memoria RAM de 72 pines. Debían instalarse por pares para completar el ancho de banda del bus.">
-                    <area shape="rect" coords="230,105,615,190" alt="DIMM" data-info="SLOTS DIMM: Ranuras para memoria SDRAM de 168 pines, permitiendo módulos de mayor capacidad que los SIMM.">
-                    <area shape="rect" coords="235,397,510,480" alt="AGP" data-info="PUERTO AGP: Diseñado para aceleradoras de video 3D. Es un bus directo al Northbridge para evitar cuellos de botella.">
-                    <area shape="rect" coords="247,485,472,828" alt="PCI" data-info="RANURAS PCI: Bus de 32 bits para tarjetas de expansión como red, sonido o USB 1.1 adicional.">
-                    <area shape="rect" coords="203,827,580,974" alt="ISA" data-info="RANURAS ISA: Estándar de 8/16 bits para hardware heredado (legacy) como módems internos o tarjetas de sonido antiguas.">
-                    
-                    <area shape="rect" coords="194,185,263,398" alt="Puertos IDE" data-info="PUERTOS IDE/FDD: Conexiones para discos duros ATA y disqueteras mediante cables de cinta de 40 u 80 hilos.">
-                    <area shape="rect" coords="175,487,243,584" alt="Super I/O" data-info="CHIP WINBOND: Controlador Super I/O que gestiona los puertos seriales, paralelo y el puerto PS/2 de teclado.">
-                    <area shape="rect" coords="206,621,254,816" alt="ROM BIOS" data-info="BIOS AWARD: Memoria flash que contiene las instrucciones básicas para encender el hardware y cargar el sistema operativo.">
-                    <area shape="rect" coords="267,192,402,300" alt="AT Power" data-info="CONECTORES ENERGÍA AT: Utiliza dos conectores de 6 pines. Si se conectan al revés, se puede quemar la placa de forma irreversible.">
-                    <area shape="circle" coords="492,778,35" alt="Batería" data-info="PILA CMOS: Mantiene la alimentación del reloj de tiempo real (RTC) y la configuración de la BIOS.">
+                    <area shape="rect" coords="877,732,1080,1110" alt="Socket 7" data-info="SOCKET 7: Zócalo de inserción para procesadores como Pentium y AMD K6. Es el centro de procesamiento de la placa.">
+                    <area shape="rect" coords="345,25,922,150" alt="SIMM" data-info="SLOTS SIMM: Memoria RAM antigua de 72 pines. Se instalaban por pares para completar el bus de datos.">
+                    <area shape="rect" coords="345,157,922,285" alt="DIMM" data-info="SLOTS DIMM: Ranuras para memoria SDRAM, más rápidas y con mayor capacidad que las SIMM.">
+                    <area shape="rect" coords="694,372,825,582" alt="Northbridge" data-info="NORTHBRIDGE VIA: El chip 'maestro' que comunica el procesador con la RAM y el puerto de video AGP.">
+                    <area shape="rect" coords="720,835,849,1047" alt="Southbridge" data-info="SOUTHBRIDGE VIA: Controlador de entrada/salida para discos duros, puertos seriales y ranuras ISA/PCI.">
+                    <area shape="rect" coords="352,595,765,720" alt="AGP" data-info="RANURA AGP: Puerto dedicado exclusivamente a la tarjeta gráfica para aceleración de video 3D.">
+                    <area shape="rect" coords="370,727,708,1242" alt="PCI" data-info="RANURAS PCI: Bus estándar para tarjetas de sonido, red o módems. Es el color blanco característico.">
+                    <area shape="rect" coords="304,1240,870,1461" alt="ISA" data-info="RANURAS ISA: Las más antiguas de la placa, usadas para hardware de baja velocidad de la era original de IBM.">
+                    <area shape="rect" coords="400,288,603,450" alt="AT Power" data-info="CONECTOR AT POWER: Entrada de energía dividida en dos piezas (P8 y P9). Muy delicado al conectar.">
+                    <area shape="rect" coords="291,277,394,597" alt="IDE" data-info="PUERTOS IDE: Conexiones para los cables planos de discos duros y unidades de CD-ROM.">
+                    <area shape="circle" coords="738,1167,52" alt="Pila" data-info="PILA CMOS: Mantiene la configuración de la BIOS y la hora del sistema activa.">
                 </map>
             </div>
         </section>
 
         <section>
-            <h2>2. Arquitectura de Vanguardia (MSI MAG X870E)</h2>
+            <h2>2. Tecnología Actual (MSI MAG X870E - AM5)</h2>
             <div class="image-wrapper">
-                <img src="msi-mag-x870e-gaming_max_wifi-2d.png" usemap="#mapa-moderna" class="placa-img">
+                <img src="msi-mag-x870e-gaming_max_wifi-2d.jpg" usemap="#mapa-moderna" class="placa-img">
                 <map name="mapa-moderna">
-                    <area shape="rect" coords="360,190,570,410" alt="Socket AM5" data-info="SOCKET AM5 (LGA): Soporta Ryzen 9000. Los pines están en la placa y no en el CPU para evitar daños al procesador.">
-                    <area shape="rect" coords="80,35,310,465" alt="Disipadores" data-info="SISTEMA VRM: Disipadores térmicos pesados que enfrían las fases de poder para permitir overclocking estable.">
-                    <area shape="rect" coords="190,30,325,70" alt="EPS Power" data-info="8-PIN CPU POWER: Puertos dobles de energía para suministrar corriente extra al procesador en tareas pesadas.">
-                    
-                    <area shape="rect" coords="668,105,798,565" alt="DDR5" data-info="MEMORIA DDR5: Nueva tecnología con voltajes más bajos y velocidades superiores a 8000 MHz.">
-                    <area shape="rect" coords="230,495,640,560" alt="M.2_1" data-info="SLOT M.2 PCIe 5.0: Conexión directa al CPU para SSDs NVMe de velocidad extrema (hasta 14,000 MB/s).">
-                    <area shape="rect" coords="230,780,640,805" alt="M.2_2" data-info="SLOT M.2 PCIe 4.0: Segundo puerto para expansión de almacenamiento de alta velocidad.">
-                    <area shape="rect" coords="635,920,795,980" alt="SATA" data-info="PUERTOS SATA 6Gb/s: Para conectar discos mecánicos (HDD) o SSDs de 2.5 pulgadas de gran capacidad.">
-
-                    <area shape="rect" coords="230,590,645,630" alt="PCIe 5.0" data-info="SLOT PCIe 5.0 x16: Ranura reforzada con metal para tarjetas gráficas de gama alta, preparada para el ancho de banda del futuro.">
-                    <area shape="rect" coords="665,590,790,895" alt="Chipset X870E" data-info="CHIPSET X870E: El cerebro que controla el USB 4.0, Wi-Fi 7 y distribuye las líneas PCIe de los periféricos.">
-                    <area shape="rect" coords="815,260,840,490" alt="ATX 24" data-info="ATX 24-PIN: Entrada principal que alimenta la placa base y distribuye energía a los componentes integrados.">
-                    
-                    <area shape="rect" coords="115,930,225,980" alt="Audio" data-info="AUDIO BOOST: Procesador de sonido con capacitores japoneses y blindaje contra interferencias electromagnéticas.">
-                    <area shape="rect" coords="710,35,805,90" alt="Debug LED" data-info="EZ DEBUG LED: Sistema de diagnóstico visual que indica mediante luces si falla el arranque, el CPU, la RAM o la GPU.">
-                    <area shape="rect" coords="250,945,350,985" alt="USB Header" data-info="USB 3.2 HEADERS: Pines internos para conectar los puertos USB frontales del gabinete de la computadora.">
-                    <area shape="rect" coords="500,945,620,985" alt="Front Panel" data-info="PANELES JFP1/2: Donde se conectan los cables del botón de encendido, reinicio y LEDs del chasis.">
+                    <area shape="rect" coords="540,285,855,615" alt="Socket AM5" data-info="SOCKET AM5: Conexión LGA 1718 para procesadores Ryzen 9000. No tiene pines en el CPU, sino en la placa.">
+                    <area shape="rect" coords="120,52,465,697" alt="VRM" data-info="SISTEMA VRM: Disipadores que enfrían los componentes que regulan la energía del procesador.">
+                    <area shape="rect" coords="1002,157,1197,847" alt="DDR5" data-info="SLOTS DDR5: Memoria RAM de quinta generación. Soporta velocidades extremas superiores a 8000 MT/s.">
+                    <area shape="rect" coords="345,885,967,1095" alt="PCIe 5.0" data-info="PCIe GEN 5: Ranura reforzada con acero para la tarjeta de video, con el doble de velocidad que la generación anterior.">
+                    <area shape="rect" coords="345,742,960,840" alt="M.2_1" data-info="M.2 GEN 5: El puerto más rápido para SSDs. Incluye disipador para evitar el sobrecalentamiento.">
+                    <area shape="rect" coords="997,885,1185,1342" alt="Chipset X870E" data-info="CHIPSET X870E: Controla la conectividad masiva: USB 4.0, Wi-Fi 7 y líneas PCIe secundarias.">
+                    <area shape="rect" coords="1222,390,1260,735" alt="Poder" data-info="24-PIN ATX: Entrada de energía principal que alimenta todos los componentes de la placa.">
+                    <area shape="rect" coords="172,1395,337,1470" alt="Audio" data-info="AUDIO BOOST: Procesador de audio aislado para ofrecer sonido nítido sin ruido eléctrico.">
+                    <area shape="rect" coords="1065,52,1207,135" alt="Debug" data-info="EZ DEBUG LED: Luces que indican si el problema de arranque es por el CPU, la RAM o la GPU.">
+                    <area shape="circle" coords="262,1297,52" alt="Batería" data-info="BATERÍA CMOS: Mantiene viva la configuración personalizada de la BIOS.">
                 </map>
             </div>
         </section>
 
-        <div id="info-box">Pasa el ratón sobre un componente para conocer su funcionamiento preciso</div>
+        <div id="info-box">Pasa el ratón sobre un componente para ver su función técnica</div>
     </div>
 
     <script src="java.js"></script>
